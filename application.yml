@@ -24,6 +24,10 @@ eureka:
   instance:
     hostname: localhost
     
+logging:
+    pattern:
+        console: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %highlight(%-5level) %cyan(%logger{15}) - %msg %n"     
+    
 microservice:
   payment-service:
     endpoints:
